@@ -27,7 +27,7 @@ VSCode Extensions (optional):
 3. Remember your database name, the user, and password for the next step
 
 ## Setting Up Your Development Environment
-**Application Properties**: Set up your `application.properties` file. This file is not included in the repository because it contains sensitive information. The `application.properties` file should be located in the in the `backend/src/main/resources`, outside of the `activities` directory. The contents of the `application.properties` file should be as follows:
+**Application Properties**: Set up your `application.properties` file. This file is not included in the repository because it contains sensitive information. The `application.properties` file should be located in the in the `backend/src/main/resources`, outside of the `static` or `templates` directory. The contents of the `application.properties` file should be as follows:
 
 ```
 spring.datasource.url=jdbc:postgresql://localhost/<DB NAME>
