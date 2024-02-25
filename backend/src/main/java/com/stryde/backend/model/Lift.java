@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Lift extends ConcreteExercise {
     private ArrayList<ExerciseSet> exerciseSets;
-    private int xp;
+    private final static int xp = 50;
 
     public Lift(Exercise exercise) {
         super(exercise);

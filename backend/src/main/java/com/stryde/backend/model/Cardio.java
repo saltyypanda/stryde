@@ -4,12 +4,11 @@ import java.util.ArrayList;
 
 public class Cardio extends ConcreteExercise {
     private ArrayList<ExerciseTime> exerciseTimes;
-    private int xp;
+    private final static int xp = 50;
 
-    public Cardio(Exercise exercise, int xp) {
+    public Cardio(Exercise exercise) {
         super(exercise);
         this.exerciseTimes = new ArrayList<>();
-        this.xp = xp;
     }
 
     @Override
