@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Lift extends ConcreteExercise {
     private ArrayList<ExerciseSet> exerciseSets;
+    private int xp;
 
     public Lift(Exercise exercise) {
         super(exercise);
@@ -27,11 +28,15 @@ public class Lift extends ConcreteExercise {
         return exerciseSets.remove(set);
     }
 
-    public int getReps() {
+    public int getTotalReps() {
         int totalReps = 0;
         for(ExerciseSet set : exerciseSets) {
             totalReps += set.getReps();
         }
         return totalReps;
+    }
+
+    public int getXp() {
+        return xp;
     }
 }

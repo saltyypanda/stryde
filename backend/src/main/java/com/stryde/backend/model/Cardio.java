@@ -4,10 +4,12 @@ import java.util.ArrayList;
 
 public class Cardio extends ConcreteExercise {
     private ArrayList<ExerciseTime> exerciseTimes;
+    private int xp;
 
-    public Cardio(Exercise exercise) {
+    public Cardio(Exercise exercise, int xp) {
         super(exercise);
         this.exerciseTimes = new ArrayList<>();
+        this.xp = xp;
     }
 
     @Override
@@ -25,5 +27,17 @@ public class Cardio extends ConcreteExercise {
 
     public boolean removeExerciseSet(ExerciseTime time) {
         return exerciseTimes.remove(time);
+    }
+
+    public int getTotalTime() {
+        int totalTime = 0;
+        for(ExerciseTime time : exerciseTimes) {
+            totalTime += time.getTime();
+        }
+        return totalTime;
+    }
+
+    public int getXp() {
+        return xp;
     }
 }

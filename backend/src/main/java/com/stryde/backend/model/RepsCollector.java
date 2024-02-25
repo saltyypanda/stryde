@@ -9,7 +9,7 @@ public class RepsCollector implements StatsCollector {
 
     @Override
     public void visitLiftingExercise(Lift lift) {
-        totalReps += lift.getReps();
+        totalReps += lift.getTotalReps();
     }
 
     @Override
