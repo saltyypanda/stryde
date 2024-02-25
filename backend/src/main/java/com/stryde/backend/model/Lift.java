@@ -26,4 +26,12 @@ public class Lift extends ConcreteExercise {
     public boolean removeExerciseSet(ExerciseSet set) {
         return exerciseSets.remove(set);
     }
+
+    public int getReps() {
+        int totalReps = 0;
+        for(ExerciseSet set : exerciseSets) {
+            totalReps += set.getReps();
+        }
+        return totalReps;
+    }
 }
