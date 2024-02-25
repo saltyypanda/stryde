@@ -17,7 +17,7 @@ public class xpCollector implements StatsCollector {
         totalXP += cardio.getXp();
     }
 
-    public int getTotalReps() {
+    public int getTotalXP() {
         return totalXP;
     }
 }
