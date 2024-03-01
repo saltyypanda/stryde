@@ -6,9 +6,9 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import com.stryde.backend.model.ActivityLevel;
-import com.stryde.backend.model.Sex;
-import com.stryde.backend.model.WeightGoal;
+import com.stryde.backend.model.user.ActivityLevel;
+import com.stryde.backend.model.user.Sex;
+import com.stryde.backend.model.user.WeightGoal;
 
 import io.github.cdimascio.dotenv.Dotenv;
 

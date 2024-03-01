@@ -1,6 +1,11 @@
-package com.stryde.backend.model;
+package com.stryde.backend.model.exercise;
 
 import java.util.ArrayList;
+
+import com.stryde.backend.model.collectors.RepsCollector;
+import com.stryde.backend.model.collectors.TimeCollector;
+import com.stryde.backend.model.collectors.xpCollector;
+import com.stryde.backend.model.user.Workout;
 
 public class WorkoutSession {
     private Workout workout;

@@ -1,4 +1,4 @@
-package com.stryde.backend.model;
+package com.stryde.backend.model.exercise;
 
 public enum Intensity {
     LOW(5),

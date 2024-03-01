@@ -1,4 +1,4 @@
-package com.stryde.backend.model;
+package com.stryde.backend.model.exercise;
 
 public class ExerciseTime {
     //time is in seconds

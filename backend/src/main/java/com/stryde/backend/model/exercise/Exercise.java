@@ -1,4 +1,4 @@
-package com.stryde.backend.model;
+package com.stryde.backend.model.exercise;
 
 public abstract class Exercise {
     private String name;

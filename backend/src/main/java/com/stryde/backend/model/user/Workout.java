@@ -1,6 +1,8 @@
-package com.stryde.backend.model;
+package com.stryde.backend.model.user;
 
 import java.util.ArrayList;
+
+import com.stryde.backend.model.exercise.ConcreteExercise;
 
 public class Workout {
     private ArrayList<ConcreteExercise> exercises;

@@ -1,4 +1,4 @@
-package com.stryde.backend.model;
+package com.stryde.backend.model.user;
 
 public enum Sex {
     MALE("male"),

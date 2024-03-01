@@ -1,4 +1,7 @@
-package com.stryde.backend.model;
+package com.stryde.backend.model.collectors;
+
+import com.stryde.backend.model.exercise.Cardio;
+import com.stryde.backend.model.exercise.Lift;
 
 public class RepsCollector implements StatsCollector {
     private int totalReps;

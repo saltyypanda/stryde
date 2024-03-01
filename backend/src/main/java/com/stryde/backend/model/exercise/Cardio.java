@@ -1,6 +1,8 @@
-package com.stryde.backend.model;
+package com.stryde.backend.model.exercise;
 
 import java.util.ArrayList;
+
+import com.stryde.backend.model.collectors.StatsCollector;
 
 public class Cardio extends ConcreteExercise {
     private ArrayList<ExerciseTime> exerciseTimes;
