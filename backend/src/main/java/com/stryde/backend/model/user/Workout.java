@@ -16,7 +16,7 @@ public class Workout {
     }
 
     public boolean removeExercise(ConcreteExercise exercise) {
-        return exercises.add(exercise);
+        return exercises.remove(exercise);
     }
 
     public ArrayList<ConcreteExercise> getExercises() {

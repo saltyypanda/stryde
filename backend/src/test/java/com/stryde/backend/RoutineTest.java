@@ -1,5 +1,6 @@
 package com.stryde.backend;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
@@ -44,6 +45,6 @@ public class RoutineTest {
 
         //Analyze
         assertTrue(workouts.contains(firstWorkout));
-        assertTrue(!workouts.contains(secondWorkout));
+        assertFalse(workouts.contains(secondWorkout));
     }
 }
