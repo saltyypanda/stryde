@@ -25,19 +25,20 @@ public class FitnessAPI {
                 .asJson();
         JSONObject result = response.getBody().getObject();
         JSONObject goals = result.getJSONObject("data").getJSONObject("goals");
-        int calories = 0;
+        System.out.println(goals);
+        double calories = 0.0;
         switch(weightGoal) {
             case MAINTAIN_WEIGHT:
-                calories = goals.getInt("maintain weight");
+                calories = goals.getDouble("maintain weight");
                 break;
             case LOSE_WEIGHT:
-                calories = goals.getJSONObject("Weight loss").getInt("calory");
+                calories = goals.getJSONObject("Weight loss").getDouble("calory");
                 break;
             case GAIN_WEIGHT:
-                calories = goals.getJSONObject("Weight gain").getInt("calory");
+                calories = goals.getJSONObject("Weight gain").getDouble("calory");
                 break;
         }
-        return calories;
+        return (int) Math.round(calories);
     }
 
     //testing API functionality
