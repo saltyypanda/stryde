@@ -16,4 +16,8 @@ public class Routine {
     public boolean removeWorkout(Workout workout) {
         return workouts.remove(workout);
     }
+
+    public ArrayList<Workout> getWorkouts() {
+        return workouts;
+    }
 }
