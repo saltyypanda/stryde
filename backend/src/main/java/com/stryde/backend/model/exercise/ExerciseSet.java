@@ -13,15 +13,7 @@ public class ExerciseSet {
         return reps;
     }
 
-    public void setReps(int reps) {
-        this.reps = reps;
-    }
-
     public double getWeight() {
         return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
     }
 }

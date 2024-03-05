@@ -22,11 +22,11 @@ public class Cardio extends ConcreteExercise {
         return exerciseTimes;
     }
 
-    public boolean addExerciseSet(ExerciseTime time) {
+    public boolean addExerciseTime(ExerciseTime time) {
         return exerciseTimes.add(time);
     }
 
-    public boolean removeExerciseSet(ExerciseTime time) {
+    public boolean removeExerciseTime(ExerciseTime time) {
         return exerciseTimes.remove(time);
     }
 

@@ -47,4 +47,8 @@ public class WorkoutSession {
     public Workout getWorkout() {
         return workout;
     }
+
+    public ArrayList<ConcreteExercise> getCompletedExercises() {
+        return completedExercises;
+    }
 }
